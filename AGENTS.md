@@ -11,6 +11,7 @@
 - `scripts/` — layout-generation scripts, one file per design/experiment.
 - `outputs/` — generated artifacts (`.gds` and similar), written by the scripts in `scripts/`.
 - A script writes into `outputs/` via a path resolved relative to its own location (e.g. `Path(__file__).resolve().parent.parent / "outputs"`), so it works regardless of the working directory it's run from.
+- `src/layout/` — reusable package code (shared components, cross-sections, helpers), importable as `import layout`. Standard `src/` layout, discovered via the `[tool.hatch.build.targets.wheel]` config in `pyproject.toml`. Empty for now; scripts import from here once something is worth sharing.
 
 ## Environment
 

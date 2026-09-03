@@ -545,17 +545,6 @@ wheels = [
 ]
 
 [[package]]
-name = "gdsfactory-env"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "gdsfactory" },
-]
-
-[package.metadata]
-requires-dist = [{ name = "gdsfactory", specifier = ">=9.49.0" }]
-
-[[package]]
 name = "graphviz"
 version = "0.21"
 source = { registry = "https://pypi.org/simple" }
@@ -940,6 +929,17 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/ad/75/c9df5c7afb3d4a87de7264c749e1b4ad6d1661895d070fdca765b7265f8a/klayout-0.30.12-cp314-cp314t-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:54c41a6e252c6057fadb9fc1c776f57d9016fee52589cbcc2efe091cd8341fe3", size = 27388553, upload-time = "2026-08-26T19:22:52.707Z" },
     { url = "https://files.pythonhosted.org/packages/45/28/df4bc845025a957c71aa954531bec7943e09d4712479a015872976cb2717/klayout-0.30.12-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:041ed2f9a30700017e560a3481e6f2493a23e1ef40b1c7ed0c635221dde31119", size = 28956227, upload-time = "2026-08-26T19:22:56.552Z" },
 ]
+
+[[package]]
+name = "layout"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "gdsfactory" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "gdsfactory", specifier = ">=9.49.0" }]
 
 [[package]]
 name = "lazy-loader"
